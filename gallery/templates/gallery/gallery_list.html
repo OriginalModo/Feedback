@@ -1,0 +1,15 @@
+{% extends 'feedback/base.html' %}
+
+{% block title %} Добавление файла в галлерею {% endblock %}
+
+{% block content %}
+    <h2>Список файлов</h2>
+    <ol>
+    {% for object in object_list %}
+    	<li>
+            <img src="{{ object.image.url }}" alt="" height="" width="600">
+        </li>
+    {% endfor %}
+    </ol>
+
+{% endblock %}
